@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="library"> What library would u prefer? : <input class="library" type="text"></input></label>
+    <p></p>
+    <label for="language"> What language was created to add interactivity to the Web? : <input class="language" type="text"></input></label>
+</body>
+
+    <script>
+        alert(document.querySelector('.library'));
+        var txtLibrary = document.querySelector('.library');
+        txtLibrary.addEventListener('focusout',
+        (event) => { alert(txtLibrary.value) })
+
+        alert(document.querySelector('.language'));
+        var txtCourse = document.querySelector('.language');
+        txtCourse.addEventListener('focusout',
+        (event) => { alert(txtCourse.value) })
+        
+    </script>
+
+</html>
